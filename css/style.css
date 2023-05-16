@@ -112,10 +112,22 @@ nav .links{
     padding: 0;
 }
 
-/* Banner-2 */
+/* Main-Products */
 .products{
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     border: 2px solid red;
-    top: 0;
+    padding: 0;
+}
+
+.products article:nth-child(1){
+    margin-right: auto;
+
+}
+
+.products article:nth-child(2){
+    margin-left: auto;
+
 }
