@@ -96,8 +96,6 @@ nav .links{
     display: flex;
     justify-content: space-around;
     transition: all .5s ease-in-out;
-    border: 2px solid red;
-
 }
 
 .banner-cont img{
@@ -118,14 +116,15 @@ nav .links{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 2px solid red;
     padding: 0;
+    border: 2px solid red;
 }
 
-.products article:nth-child(1){
+.products article:nth-child(0){
     margin-right: auto;
 
 }
+
 
 .products article:nth-child(2){
     margin-left: auto;
