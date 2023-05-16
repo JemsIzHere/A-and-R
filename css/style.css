@@ -1,0 +1,121 @@
+:root{
+    --black-rgba: rgba(0,0,0,0.2);
+    --main: #0A3E44;
+    --sub: #F2A900;
+    --white: #FFFFFF;
+    --filler: #CCCCCC;
+    --alt: #1C6B7D;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    /* font-family:'Sen', sans-serif; */
+    background-color: var(--white);
+}
+a{
+    text-decoration: none;
+    color: var(--white);
+    transition: .3s ease;
+}
+
+a:hover{
+    color: var(--filler);
+}
+
+/* Navbar */
+nav{
+    height: 85px;
+    background-color: var(--main);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+nav .logo img{
+    height: 84px;
+    object-fit: contain;
+}
+
+nav .logo{
+    margin-right: auto;
+    margin-left: 5%;
+}
+
+nav .links{
+    position: absolute;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    margin-left: auto;
+
+}
+
+.links li {
+    margin: 0 10px;
+}
+
+/* Banner */
+
+.banner{
+    background-color: var(--main);
+    height: 980px;
+    content: '';
+    clip-path: polygon(0 0, 100% 0, 100% 30%, 0% 100%);
+    display: flex;
+    justify-content: space-around;
+    transition: all .5s ease-in-out;
+
+}
+
+.banner .info{
+    color: var(--white);
+    margin-top: 10%;
+    padding: 0;
+}
+
+.banner img{
+    height: 35%;
+    object-fit: contain;
+    margin-right: 10%;
+    margin-top: 2%;
+}
+
+/* Banner-2 */
+.banner-cont{
+    background-color: var(--sub);
+    height: 980px;
+    content: '';
+    clip-path: polygon(-50% 65%, 42.8% 0, 200% 70%, 100% 100%);
+    transform: translateY(-30%);
+    display: flex;
+    justify-content: space-around;
+    transition: all .5s ease-in-out;
+    border: 2px solid red;
+
+}
+
+.banner-cont img{
+    height: 35%;
+    object-fit: contain;
+    margin-left: 10%;
+    margin-top: 15%;
+}
+
+.banner-cont article{
+    margin-top: 15%;
+    padding: 0;
+}
+
+/* Banner-2 */
+.products{
+    display: flex;
+    justify-content: center;
+    border: 2px solid red;
+    top: 0;
+}
