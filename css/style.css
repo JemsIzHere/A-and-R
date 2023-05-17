@@ -118,15 +118,32 @@ nav .links{
     align-items: center;
     padding: 0;
     border: 2px solid red;
-}
-
-.products article:nth-child(0){
-    margin-right: auto;
 
 }
 
+.products .prod1,.prod2{
+    border: 2px solid red;
+    width: 40%;
+    padding: 10px;
+}
 
-.products article:nth-child(2){
+.products .prod1{
     margin-left: auto;
 
+}
+
+.products .prod2{
+    margin-right: auto;
+    margin-left:5%;
+
+}
+
+/*Footer*/
+footer{
+    height: 85px;
+    background-color: var(--main);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
 }
