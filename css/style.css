@@ -117,18 +117,19 @@ nav .links{
     justify-content: center;
     align-items: center;
     padding: 0;
-    border: 2px solid red;
+    /* border: 2px solid red; */
 
 }
 
 .products .prod1,.prod2{
-    border: 2px solid red;
+    /* border: 2px solid red; */
     width: 40%;
     padding: 10px;
 }
 
 .products .prod1{
     margin-left: auto;
+    margin-right: 5%;
 
 }
 
@@ -140,10 +141,19 @@ nav .links{
 
 /*Footer*/
 footer{
-    height: 85px;
+    height: 160px;
     background-color: var(--main);
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 10px;
+    color: var(--white);
+}
+
+footer .main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 15%;
 }
