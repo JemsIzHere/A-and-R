@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Sunflower:wght@300&display=swap');
 :root{
     --black-rgba: rgba(0,0,0,0.2);
     --main: #0A3E44;
@@ -5,6 +6,14 @@
     --white: #FFFFFF;
     --filler: #CCCCCC;
     --alt: #1C6B7D;
+    --title: 48px;
+    --subt: 40px;
+    --p1: 24px;
+    --p2: 20px;
+    --ph: 16px;
+}
+*{
+    font-family: 'Sunflower', sans-serif;
 }
 
 html{
@@ -79,6 +88,17 @@ nav .links{
     padding: 0;
 }
 
+.banner .info h1{
+    font-size: var(--title);
+    width: 70%;
+    font-weight: bolder;
+}
+
+.banner .info p{
+    font-size: var(--p1);
+    
+}
+
 .banner img{
     height: 35%;
     object-fit: contain;
@@ -107,7 +127,19 @@ nav .links{
 
 .banner-cont article{
     margin-top: 15%;
+    margin-left: 20%;
     padding: 0;
+}
+
+.banner-cont article h1{
+    font-size: var(--subt);
+    font-weight: bold;
+    width: 75%;
+}
+
+.banner-cont article p{
+    font-size: var(--p1);
+    width: 75%;
 }
 
 /* Main-Products */
@@ -121,21 +153,53 @@ nav .links{
 
 }
 
+.products .title{
+    font-size: var(--title);
+    font-weight: bolder;
+    color: var(--alt);
+    
+}
+
 .products .prod1,.prod2{
     /* border: 2px solid red; */
-    width: 40%;
     padding: 10px;
+    display: flex;
+    margin-bottom: 5%;
+    
 }
 
-.products .prod1{
+.products .prod1 img{
+    margin-left: 5%;
+    width: 40%;
+}
+
+.products .prod2 img{
+    margin-right: 5%;
+    width: 40%;
+}
+
+.products .prod1 h1,.prod2 h1{
+    font-size: var(--subt);
+    color: var(--alt);
+    width: 70%;
+}
+
+.products .prod1 p,.prod2 p{
+    font-size: var(--p2);
+
+}
+
+.products .prod1 .content{
     margin-left: auto;
     margin-right: 5%;
+    width: 40%;
 
 }
 
-.products .prod2{
+.products .prod2 .content{
     margin-right: auto;
     margin-left:5%;
+    width: 40%;
 
 }
 
@@ -148,6 +212,7 @@ footer{
     align-items: center;
     justify-content: center;
     padding: 10px;
+    margin-top: 10%;
     color: var(--white);
 }
 
